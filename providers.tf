@@ -1,3 +1,8 @@
+# Environment Variables Handler
+data "external" "env" {
+  program = ["jq", "-n", "env"]
+}
+
 terraform {
   required_version = ">=0.12"
 
@@ -19,4 +24,8 @@ terraform {
 
 provider "azurerm" {
   features {}
+}
+
+provider "cloudflare" {
+  api_token = data.external.env.result.CLOUDFLARE_BEARER
 }

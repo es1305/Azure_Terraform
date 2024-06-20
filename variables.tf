@@ -11,5 +11,5 @@ variable "resource_group_name_prefix" {
 }
 
 variable "cloudflare_zone_id" {
-  default = "30e16b80bc0d9ec8893777d37ee00b4b"
+  default = ""
 }

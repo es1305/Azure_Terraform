@@ -9,4 +9,4 @@ export CLOUDFLARE_EMAIL=mai****.com
 export CLOUDFLARE_BEARER=EAz6****
 export CLOUDFLARE_DOMAIN=hm****.com
 ```
-Результат выполнения `zid.sh` после `exports` добавить в `variables.tf -- cloudflare_zone_id" -- default`
+Результат выполнения `zid.sh` после `exports` добавить в `variables.tf - cloudflare_zone_id - default`
